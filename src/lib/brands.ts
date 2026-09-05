@@ -7,7 +7,6 @@ export type BrandConfig = {
   bgPosition?: string
 }
 
-// Keyed by Auth0 organization name (slug) — must match what you set in Auth0 Dashboard
 export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
   hnd: {
     slug: 'hnd',

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth0 ACUL — Dev Preview</title>
+    <script>
+      // Simulate the Auth0-injected context for local dev.
+      // Change screen.name to preview any screen:
+      //   login-id | login-password | mfa-otp-challenge | mfa-sms-challenge | signup-id | signup-password
+      window.universal_login_context = {
+        screen: { name: 'login-id' },
+        organization: { id: 'org_dev', name: 'hnd', display_name: 'HND Portal' },
+        transaction: { state: 'dev-state-000', errors: [] },
+        untrusted_data: { submitted_form_data: {} }
+      }
+    </script>
+  </head>
+  <body style="margin:0;height:100%">
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
