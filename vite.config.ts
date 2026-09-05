@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss(), react()],
   build: {
     outDir: 'dist',
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
         format: 'iife',
