@@ -1,4 +1,4 @@
-import { getBrandByOrgName } from './lib/brands'
+import { getBrandByOrgName /*, getBrandByClientName */ } from './lib/brands'
 import { LoginIdScreen } from './screens/LoginId'
 import { LoginPasswordScreen } from './screens/LoginPassword'
 import { OtpScreen } from './screens/MfaOtp'
@@ -21,7 +21,11 @@ declare global {
 export function App() {
   const ctx = window.universal_login_context
   const screenName = ctx?.screen?.name
+  // To switch branding to client-app-driven: comment the org line, uncomment the client line.
+  // client.name matches the Auth0 Application Name exactly (Dashboard → Applications).
+  // Note: client_id is not exposed in universal_login_context — client.name is the key.
   const brand = getBrandByOrgName(ctx?.organization?.name)
+  // const brand = getBrandByClientName(ctx?.client?.name)
   const errors = ctx?.transaction?.errors?.map((e) => e.message) ?? []
   const submitted = ctx?.untrusted_data?.submitted_form_data ?? {}
   const email = submitted.username ?? submitted.email ?? ''
