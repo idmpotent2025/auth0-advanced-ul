@@ -26,7 +26,7 @@ export type BrandConfig = {
 // }
 
 export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
-  hnd: {
+  'red-hnd': {
     slug: 'hnd',
     displayName: 'HND Portal',
     color: '#E40521',
@@ -35,7 +35,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     bgPosition: 'center',
     logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/500px-Honda.svg.png',
   },
-  sps: {
+  'green-sps': {
     slug: 'sps',
     displayName: 'SPS Portal',
     color: '#5F8B3E',
@@ -44,7 +44,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     bgPosition: 'left center',
     logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Sprouts_Farmers_Market_Logo.png/330px-Sprouts_Farmers_Market_Logo.png',
   },
-  ctp: {
+  'yellow-ctp': {
     slug: 'ctp',
     displayName: 'CTP Portal',
     color: '#FFCD11',
@@ -53,7 +53,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     bgPosition: 'center',
     logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Caterpillar_logo.svg/960px-Caterpillar_logo.svg.png',
   },
-  ecl: {
+  'blue-ecl': {
     slug: 'ecl',
     displayName: 'ECL Portal',
     color: '#003591',

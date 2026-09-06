@@ -8,9 +8,11 @@
       // Simulate the Auth0-injected context for local dev.
       // Change screen.name to preview any screen:
       //   login-id | login-password | mfa-otp-challenge | mfa-sms-challenge | signup-id | signup-password
+      // Change organization.name to preview a brand (must match Auth0 org name exactly):
+      //   red-hnd | green-sps | yellow-ctp | blue-ecl
       window.universal_login_context = {
         screen: { name: 'login-id' },
-        organization: { id: 'org_dev', name: 'hnd', display_name: 'HND Portal' },
+        organization: { id: 'org_dev', name: 'red-hnd', display_name: 'HND Portal' },
         transaction: { state: 'dev-state-000', errors: [] },
         untrusted_data: { submitted_form_data: {} }
       }
