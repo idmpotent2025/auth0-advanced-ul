@@ -5,6 +5,7 @@ export type BrandConfig = {
   textColor: string
   bgImage: string
   bgPosition?: string
+  logoUrl?: string
 }
 
 // To key branding off client app instead of org, swap the lookup in App.tsx
@@ -32,6 +33,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     textColor: '#fff',
     bgImage: 'https://portal.auth.tamirsa.com/brands/hnd.png',
     bgPosition: 'center',
+    logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/500px-Honda.svg.png',
   },
   sps: {
     slug: 'sps',
@@ -40,6 +42,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     textColor: '#fff',
     bgImage: 'https://portal.auth.tamirsa.com/brands/sps.png',
     bgPosition: 'left center',
+    logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Sprouts_Farmers_Market_Logo.png/330px-Sprouts_Farmers_Market_Logo.png',
   },
   ctp: {
     slug: 'ctp',
@@ -48,6 +51,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     textColor: '#000',
     bgImage: 'https://portal.auth.tamirsa.com/brands/ctp.png',
     bgPosition: 'center',
+    logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Caterpillar_logo.svg/960px-Caterpillar_logo.svg.png',
   },
   ecl: {
     slug: 'ecl',
@@ -56,6 +60,7 @@ export const BRAND_BY_ORG_NAME: Record<string, BrandConfig> = {
     textColor: '#fff',
     bgImage: 'https://portal.auth.tamirsa.com/brands/ecl.png',
     bgPosition: 'center',
+    logoUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Ecolab.svg/960px-Ecolab.svg.png',
   },
 }
 

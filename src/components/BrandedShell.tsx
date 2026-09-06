@@ -20,12 +20,20 @@ export function BrandedShell({ brand, children }: { brand: BrandConfig; children
             className="px-8 pt-7 pb-5 flex flex-col items-center gap-2"
             style={{ backgroundColor: brand.color + '12' }}
           >
-            <div
-              className="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-base"
-              style={{ backgroundColor: brand.color }}
-            >
-              {brand.displayName.charAt(0)}
-            </div>
+            {brand.logoUrl ? (
+              <img
+                src={brand.logoUrl}
+                alt={brand.displayName}
+                className="h-10 w-auto max-w-[140px] object-contain"
+              />
+            ) : (
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-base"
+                style={{ backgroundColor: brand.color }}
+              >
+                {brand.displayName.charAt(0)}
+              </div>
+            )}
             <h1 className="text-gray-900 font-bold text-lg tracking-tight">{brand.displayName}</h1>
           </div>
           <div className="px-8 py-7">{children}</div>
