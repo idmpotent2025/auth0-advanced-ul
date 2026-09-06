@@ -1,0 +1,21 @@
+{
+  "rendering_mode": "advanced",
+  "context_configuration": [],
+  "default_head_tags_disabled": false,
+  "head_tags": [
+    {
+      "tag": "link",
+      "attributes": {
+        "rel": "stylesheet",
+        "href": "https://auth0-advanced-ul.vercel.app/bundle.css"
+      }
+    },
+    {
+      "tag": "script",
+      "attributes": {
+        "src": "https://auth0-advanced-ul.vercel.app/bundle.js",
+        "defer": "true"
+      }
+    }
+  ]
+}
