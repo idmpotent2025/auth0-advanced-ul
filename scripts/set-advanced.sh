@@ -8,10 +8,12 @@ SETTINGS="$(dirname "$0")/settings-advanced.json"
 SCREENS=(
   login-id
   login-password
-  mfa-otp-challenge
-  mfa-sms-challenge
+#  mfa-otp-challenge
+#  mfa-sms-challenge
   signup-id
   signup-password
+  passkey-enrollment
+  passkey-enrollment-local
 )
 
 for screen in "${SCREENS[@]}"; do
